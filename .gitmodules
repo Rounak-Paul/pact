@@ -1,0 +1,3 @@
+[submodule "vendors/vulkan/vma"]
+	path = vendors/vulkan/vma
+	url = git@github.com:Rounak-Paul/VulkanMemoryAllocator.git
