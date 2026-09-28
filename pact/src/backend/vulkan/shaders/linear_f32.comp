@@ -1,0 +1,18 @@
+#version 450
+layout(local_size_x = 256) in;
+layout(set = 0, binding = 0) readonly buffer Sources { float x[]; } sources;
+layout(set = 0, binding = 1) readonly buffer Instructions { uvec4 item[]; } program;
+layout(set = 0, binding = 2) writeonly buffer Result { float x[]; } output_value;
+layout(push_constant) uniform Parameters { uint count; uint step_count; } parameters;
+void main() {
+    uint i = gl_GlobalInvocationID.x;
+    if (i >= parameters.count) return;
+    uint base = program.item[0].x;
+    float value = sources.x[base * parameters.count + i];
+    for (uint step = 0; step < parameters.step_count; ++step) {
+        uvec4 instruction = program.item[step + 1];
+        float operand = sources.x[instruction.x * parameters.count + i];
+        value = instruction.y != 0 ? operand + value : value + operand;
+    }
+    output_value.x[i] = value;
+}

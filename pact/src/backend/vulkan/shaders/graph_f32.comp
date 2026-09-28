@@ -1,0 +1,20 @@
+#version 450
+layout(local_size_x = 256) in;
+layout(set = 0, binding = 0) readonly buffer Sources { float x[]; } sources;
+layout(set = 0, binding = 1) readonly buffer Instructions { uvec4 item[]; } program;
+layout(set = 0, binding = 2) writeonly buffer Result { float x[]; } output_value;
+layout(push_constant) uniform Parameters { uint count; uint node_count; } parameters;
+void main() {
+    uint i = gl_GlobalInvocationID.x;
+    if (i >= parameters.count) return;
+    float values[64];
+    for (uint node = 0; node < parameters.node_count; ++node) {
+        uvec4 instruction = program.item[node];
+        if (instruction.x == 0) {
+            values[node] = sources.x[instruction.y * parameters.count + i];
+        } else {
+            values[node] = values[instruction.y] + values[instruction.z];
+        }
+    }
+    output_value.x[i] = values[parameters.node_count - 1];
+}

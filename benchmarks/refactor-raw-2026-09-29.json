@@ -1,0 +1,226 @@
+[
+  {
+    "elements": 65536,
+    "adds": 1,
+    "auto": {
+      "median_us": 42.982,
+      "q1_us": 42.772,
+      "q3_us": 43.753,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 78.93,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 46.739
+    },
+    "cpu": {
+      "median_us": 42.771,
+      "q1_us": 42.611,
+      "q3_us": 42.952,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 71.135,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 43.001
+    }
+  },
+  {
+    "elements": 65536,
+    "adds": 16,
+    "cpu": {
+      "median_us": 154.844,
+      "q1_us": 154.032,
+      "q3_us": 155.585,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 277.798,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 183.679
+    },
+    "auto": {
+      "median_us": 179.421,
+      "q1_us": 178.499,
+      "q3_us": 185.673,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 201.072,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 180.183
+    }
+  },
+  {
+    "elements": 262144,
+    "adds": 2,
+    "auto": {
+      "median_us": 76.145,
+      "q1_us": 73.5,
+      "q3_us": 86.504,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 274.391,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 98.417
+    },
+    "cpu": {
+      "median_us": 86.725,
+      "q1_us": 83.028,
+      "q3_us": 88.759,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 296.103,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 84.48
+    }
+  },
+  {
+    "elements": 262144,
+    "adds": 16,
+    "cpu": {
+      "median_us": 167.979,
+      "q1_us": 165.033,
+      "q3_us": 169.662,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 370.464,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 159.613
+    },
+    "auto": {
+      "median_us": 192.385,
+      "q1_us": 190.391,
+      "q3_us": 196.904,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 452.731,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 191.334
+    }
+  },
+  {
+    "elements": 1048576,
+    "adds": 2,
+    "auto": {
+      "median_us": 290.151,
+      "q1_us": 285.913,
+      "q3_us": 299.71,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 869.212,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 355.104
+    },
+    "cpu": {
+      "median_us": 289.811,
+      "q1_us": 283.709,
+      "q3_us": 311.743,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 951.006,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 315.91
+    }
+  },
+  {
+    "elements": 1048576,
+    "adds": 16,
+    "cpu": {
+      "median_us": 540.276,
+      "q1_us": 528.313,
+      "q3_us": 587.756,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 1336.379,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 598.627
+    },
+    "auto": {
+      "median_us": 758.451,
+      "q1_us": 669.782,
+      "q3_us": 786.464,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 1324.757,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 711.101
+    }
+  },
+  {
+    "elements": 8388608,
+    "adds": 16,
+    "auto": {
+      "median_us": 5589.949,
+      "q1_us": 5488.877,
+      "q3_us": 5691.471,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 9438.599,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 5805.518
+    },
+    "cpu": {
+      "median_us": 5664.721,
+      "q1_us": 5522.69,
+      "q3_us": 5932.079,
+      "vulkan_shards": [
+        0
+      ],
+      "vulkan_elements": 0,
+      "vulkan_elements_min": 0,
+      "vulkan_elements_max": 0,
+      "first_read_us": 9309.544,
+      "first_read_vulkan_elements": 0,
+      "second_read_us": 5524.895
+    }
+  }
+]
